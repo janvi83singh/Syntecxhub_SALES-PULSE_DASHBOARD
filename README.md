@@ -73,7 +73,7 @@ The dashboard includes:
 
 ### 📷 Dashboard Preview
 
-![Sales Analytics Dashboard](screenshots/Sales%20Analytics%20Dashboard.png)
+![Sales Analytics Dashboard]("C:\Users\DELL\Downloads\Sales Analytics Dashboard.png")
 
 ---
 
@@ -93,7 +93,7 @@ The forecasting dashboard analyzes historical sales data and provides a **15-day
 
 ### 📷 Forecasting Dashboard Preview
 
-![Sales Analytics Forecasting](screenshots/Sales%20Analytics%20Forecasting.png)
+![Sales Analytics Forecasting]("C:\Users\DELL\Downloads\Sales Analytics Forecasting.png")
 
 ---
 
