@@ -1,207 +1,308 @@
-# 📊 Sales Performance Dashboard
+# 📊 Sales Pulse — Super Store Sales Dashboard & Forecasting
 
-An interactive and aesthetic **Sales Performance Dashboard** built using **Microsoft Power BI** to analyze sales, revenue, profit, product performance, regional performance, and business trends.
+An interactive **Sales Analytics and Forecasting Dashboard** built using **Microsoft Power BI** to analyze Super Store sales performance, profitability, customer segments, product categories, regions, payment modes, shipping modes, and future sales forecasts.
 
-## 🚀 Project Overview
+---
 
-The Sales Performance Dashboard provides a comprehensive view of business performance through interactive visualizations and KPIs.
+## 📌 Project Overview
 
-The dashboard helps users understand:
+**Sales Pulse** is a Power BI business intelligence project designed to transform raw Super Store sales data into interactive dashboards and actionable business insights.
 
-* Overall sales and revenue performance
-* Profit and profitability trends
-* Monthly, quarterly, and yearly sales trends
-* Top-performing products
-* Low-performing products
-* Region-wise sales performance
-* Category-wise sales performance
-* Growth and business trends
+The project contains two major dashboards:
 
-## 🎯 Objectives
+1. **Sales Analytics Dashboard** — analyzes historical sales and profit performance.
+2. **Sales Forecasting Dashboard** — provides a 15-day sales forecast based on historical sales trends.
 
-The main objectives of this project are:
+---
 
-1. Import and clean the raw sales dataset.
-2. Remove null values and duplicate records.
-3. Analyze sales performance over time.
-4. Identify the best and worst-performing products.
-5. Compare sales across different regions.
-6. Compare performance across product categories.
-7. Create important business KPIs.
-8. Build an interactive and user-friendly Power BI dashboard.
-9. Generate meaningful insights from the sales data.
+## 🎯 Project Objectives
+
+* Clean and preprocess the raw sales dataset.
+* Analyze overall sales and profitability.
+* Identify high-performing regions and states.
+* Analyze sales by category and sub-category.
+* Compare customer segments.
+* Analyze payment and shipping modes.
+* Analyze monthly sales and profit trends.
+* Identify important business KPIs.
+* Create an interactive Power BI dashboard.
+* Generate a **15-day sales forecast**.
+
+---
 
 ## 🛠️ Tools & Technologies
 
 * **Microsoft Power BI**
 * **Power Query**
 * **DAX**
-* **Microsoft Excel**
+* **Microsoft Excel / CSV**
+* **Data Cleaning**
+* **Data Analysis**
 * **Data Visualization**
-* **Data Cleaning & Transformation**
+* **Business Intelligence**
+* **Time-Series Forecasting**
 
-## 📌 Key KPIs
+---
 
-The dashboard includes important performance indicators such as:
+# 📊 Dashboard 1 — Sales Analytics
 
-* 💰 **Total Revenue**
-* 📈 **Total Sales**
-* 💵 **Total Profit**
-* 📊 **Profit Margin**
-* 🚀 **Growth Rate**
-* 🛒 **Total Orders**
-* 📦 **Total Products**
+The Sales Pulse dashboard provides an interactive overview of Super Store performance.
 
-## 📊 Dashboard Features
+### Key KPIs
 
-### 1. Sales Overview
+* 💰 **Total Sales:** 1.48M
+* 📦 **Quantity:** 21K
+* 💵 **Total Profit:** 159.82K
+* 🚚 **Average Delivery:** 3.93 days
 
-Provides a high-level summary of business performance using interactive KPI cards and charts.
+### Dashboard Analysis
 
-### 2. Time-Based Analysis
+The dashboard includes:
 
-Sales performance is analyzed at different time levels:
+* Sales by Region
+* Sales by State
+* Sales & Profit by State
+* Sales by Segment
+* Monthly Sales YoY
+* Monthly Profit YoY
+* Sales by Sub-Category
+* Sales by Category
+* Sales by Payment Mode
+* Sales by Ship Mode
+* Interactive geographical analysis
 
-* Monthly
-* Quarterly
-* Yearly
+### 📷 Dashboard Preview
 
-This helps identify sales trends and seasonal patterns.
+![Sales Analytics Dashboard](screenshots/Sales%20Analytics%20Dashboard.png)
 
-### 3. Product Analysis
+---
 
-The dashboard identifies:
+# 🔮 Dashboard 2 — Sales Forecasting
 
-* Top-selling products
-* Low-performing products
-* Products contributing the highest revenue
-* Products generating the highest profit
+The forecasting dashboard analyzes historical sales data and provides a **15-day sales forecast**.
 
-### 4. Regional Analysis
+### Features
 
-Sales performance is compared across different geographical regions to identify high-performing and underperforming areas.
+* Historical sales trend analysis
+* 15-day sales forecasting
+* Sales by state
+* Time-series visualization
+* Forecast confidence/forecast region
+* Interactive date filtering
+* Sales trend comparison
 
-### 5. Category Analysis
+### 📷 Forecasting Dashboard Preview
 
-The dashboard provides category-wise comparison of:
+![Sales Analytics Forecasting](screenshots/Sales%20Analytics%20Forecasting.png)
 
-* Sales
-* Revenue
-* Profit
+---
+
+# 📁 Dataset
+
+The project uses a **Super Store Sales Dataset** containing **5,901 records and 23 columns**.
+
+The dataset includes information about:
+
 * Orders
+* Customers
+* Products
+* Categories
+* Sub-categories
+* Sales
+* Quantity
+* Profit
+* Regions
+* States
+* Shipping modes
+* Payment modes
+* Order dates
+* Ship dates
 
-### 6. Interactive Filters
+### Important Dataset Columns
 
-Users can dynamically explore the dashboard using slicers and filters such as:
+| Column        | Description                     |
+| ------------- | ------------------------------- |
+| Order ID      | Unique order identifier         |
+| Order Date    | Date when the order was placed  |
+| Ship Date     | Date when the order was shipped |
+| Ship Mode     | Shipping method                 |
+| Customer ID   | Customer identifier             |
+| Customer Name | Customer name                   |
+| Segment       | Customer segment                |
+| City          | Customer city                   |
+| State         | Customer state                  |
+| Region        | Sales region                    |
+| Category      | Product category                |
+| Sub-Category  | Product sub-category            |
+| Product Name  | Product name                    |
+| Sales         | Sales amount                    |
+| Quantity      | Quantity sold                   |
+| Profit        | Profit generated                |
+| Payment Mode  | Payment method                  |
 
-* Date
-* Region
-* Category
-* Product
-* Year
-* Quarter
+### 📥 Dataset
 
-## 📷 Dashboard Preview
+[Download / View SuperStore Sales Dataset](SuperStore_Sales_Dataset.csv)
 
-Add your dashboard screenshots inside a `screenshots` folder and replace the filenames below.
+---
 
-### Sales Dashboard
+# 🔄 Data Preparation
 
-![Sales Dashboard](screenshots/dashboard-overview.png)
+The dataset was prepared for analysis using Power Query and Power BI.
 
-### Sales Trends
+The main preprocessing steps included:
 
-![Sales Trends](screenshots/sales-trends.png)
+1. Importing the CSV dataset.
+2. Inspecting the dataset structure.
+3. Checking data types.
+4. Handling missing values.
+5. Removing unnecessary fields where required.
+6. Preparing date fields for time-based analysis.
+7. Creating calculated measures using DAX.
+8. Preparing data for visualization and forecasting.
 
-### Regional & Category Analysis
+---
 
-![Regional Analysis](screenshots/regional-analysis.png)
+# 📈 Key Visualizations
 
-## 🔄 Data Processing
+## Sales Analysis
 
-The dataset was processed using **Power Query**.
+The dashboard provides visual analysis of:
 
-The major preprocessing steps included:
+* Sales by region
+* Sales by state
+* Sales by category
+* Sales by sub-category
+* Sales by customer segment
+* Sales by payment mode
+* Sales by shipping mode
 
-1. Loading the raw sales dataset.
-2. Checking for missing values.
-3. Removing duplicate records.
-4. Correcting data types.
-5. Cleaning and transforming columns.
-6. Creating required calculated fields.
-7. Preparing the dataset for visualization.
+## Profit Analysis
 
-## 🧮 DAX & Calculations
+Profitability is analyzed using:
 
-DAX measures were created to calculate important business metrics such as:
+* Total profit KPI
+* Monthly profit trends
+* State-level profit analysis
+* Category-level performance
 
-* Total Revenue
-* Total Profit
-* Total Sales
-* Profit Margin
-* Growth Rate
-* Order Count
+## Time-Based Analysis
 
-These measures allow the dashboard to dynamically update based on user selections.
+Historical performance is analyzed using:
 
-## 💡 Key Insights
+* Monthly sales
+* Monthly profit
+* Year-over-year comparison
+* Order date trends
 
-The dashboard can be used to identify:
+## Forecasting
 
-* Which products generate the highest sales.
-* Which products have low performance.
-* Which regions contribute the most revenue.
-* Which categories are the most profitable.
-* How sales change over time.
-* Which periods experience higher or lower sales.
-* Areas where business performance can be improved.
+The forecasting dashboard uses historical sales trends to estimate sales for the next **15 days**.
 
-## 📁 Project Structure
+---
+
+# 🎛️ Interactive Features
+
+The Power BI dashboard allows users to interact with the data through:
+
+* Region filters
+* Date filters
+* Interactive charts
+* Category analysis
+* Geographic visualization
+* Cross-filtering
+* Drill-down analysis
+* Forecast visualization
+
+---
+
+# 💡 Business Insights
+
+The dashboard helps identify:
+
+* Which regions generate the highest sales.
+* Which states contribute the most revenue.
+* Which product categories perform best.
+* Which sub-categories generate significant sales.
+* How different customer segments contribute to revenue.
+* Which payment modes are most commonly used.
+* Which shipping modes are most frequently selected.
+* How sales and profit change over time.
+* Expected sales behavior over the upcoming 15 days.
+
+---
+
+# 📂 Project Structure
 
 ```text
 Sales-Performance-Dashboard/
 │
 ├── Sales Dashboard.pbix
 │
-├── screenshots/
-│   ├── dashboard-overview.png
-│   ├── sales-trends.png
-│   └── regional-analysis.png
+├── SuperStore_Sales_Dataset.csv
 │
-├── data/
-│   └── sales_dataset.xlsx
+├── README.md
 │
-└── README.md
+└── screenshots/
+    ├── Sales Analytics Dashboard.png
+    └── Sales Analytics Forecasting.png
 ```
 
-## ▶️ How to Use
+---
 
-1. Download or clone this repository.
-2. Open `Sales Dashboard.pbix` using **Microsoft Power BI Desktop**.
-3. Refresh the dataset if required.
-4. Use the slicers and interactive visuals to explore the dashboard.
-5. Select different regions, categories, products, or time periods to analyze performance.
+# ▶️ How to Use
 
-## 🌟 Skills Demonstrated
+1. Clone or download this repository.
+2. Install **Microsoft Power BI Desktop**.
+3. Open `Sales Dashboard.pbix`.
+4. If required, update the dataset location.
+5. Click **Refresh** to load the latest data.
+6. Explore the interactive dashboards using filters and visualizations.
+
+---
+
+# 🧠 Skills Demonstrated
 
 This project demonstrates practical skills in:
 
 * Data Cleaning
-* Data Transformation
-* Data Analysis
+* Data Preprocessing
+* Exploratory Data Analysis
 * Power BI
 * Power Query
 * DAX
-* KPI Development
+* KPI Creation
 * Data Visualization
-* Dashboard Design
 * Business Intelligence
+* Time-Series Analysis
+* Sales Forecasting
+* Dashboard Design
 * Interactive Reporting
 
-## 📚 Project Type
+---
 
-**Data Analytics / Business Intelligence Project**
+# 🌟 Project Highlights
 
-Developed as part of a **Sales Performance Analysis project**.
+| Feature                        | Included |
+| ------------------------------ | -------- |
+| Interactive Power BI Dashboard | ✅        |
+| Sales Analysis                 | ✅        |
+| Profit Analysis                | ✅        |
+| Regional Analysis              | ✅        |
+| State Analysis                 | ✅        |
+| Category Analysis              | ✅        |
+| Sub-Category Analysis          | ✅        |
+| Customer Segment Analysis      | ✅        |
+| Payment Mode Analysis          | ✅        |
+| Shipping Mode Analysis         | ✅        |
+| Monthly YoY Analysis           | ✅        |
+| Sales Forecasting              | ✅        |
+| 15-Day Forecast                | ✅        |
+| Geographic Visualization       | ✅        |
 
+---
+
+# 📌 Project Type
+
+**Data Analytics | Business Intelligence | Power BI | Sales Forecasting**
 
